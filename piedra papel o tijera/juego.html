@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piedra, Papel o Tijeras</title>
+  <link rel="stylesheet" href="juego.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Piedra, Papel o Tijeras</h1>
+    <div class="choices">
+      <button onclick="playGame('piedra')">Piedra</button>
+      <button onclick="playGame('papel')">Papel</button>
+      <button onclick="playGame('tijeras')">Tijeras</button>
+      <button onclick="playGame()">Aleatorio</button>
+    </div>
+    <div class="results">
+      <p id="user-choice">Tu elección: </p>
+      <p id="computer-choice">Elección de la computadora: </p>
+      <p id="result">Resultado: </p>
+    </div>
+    <button onclick="resetGame()">Reiniciar</button>
+  </div>
+  <script src="juego.js"></script>
+</body>
+</html>
